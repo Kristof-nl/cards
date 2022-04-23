@@ -1,16 +1,29 @@
-<div class="row">
-  <div class="col-9">
-    <div class="card col-3" style="width: 12rem;">
-      <img src="assets/tree.jpeg" class="card-img-top">
-      <div class="card-body">
-        <div class="media-content">
-          <p class="fs-5 card-text mb-2">Neat Tree</p>
-          <p class="fs-6 card-text mb-1">@nature</p>
-        </div>
-        <div class="content">
-          Saw this awsome tree during hike today.
-        </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <app-card
+        [title]="posts[0].title" 
+        [imageUrl]="posts[0].imageUrl"
+        [username]="posts[0].username"
+        [content]="posts[0].content"
+        ></app-card>
+      </div>
+      <div class="col-4">
+      <app-card
+        [title]="posts[1].title" 
+        [imageUrl]="posts[1].imageUrl"
+        [username]="posts[1].username"
+        [content]="posts[1].content"
+      ></app-card>
+      </div>
+      <div class="col-4">
+      <app-card
+        [title]="posts[2].title" 
+        [imageUrl]="posts[2].imageUrl"
+        [username]="posts[2].username"
+        [content]="posts[2].content"
+      ></app-card>
       </div>
     </div>
   </div>
-</div>
